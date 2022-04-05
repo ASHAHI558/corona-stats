@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:db;
+    username: sa
+    password: sa
+  h2:
+    console:
+      enabled: true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+
+rapidapi:
+  uri: https://covid-19-coronavirus-statistics.p.rapidapi.com/v1/stats
+  headerHostName: X-RapidAPI-Host
+  headerHostValue: covid-19-coronavirus-statistics.p.rapidapi.com
+  headerKeyName: X-RapidAPI-Key
+  headerKeyValue: 67aeec84abmshbac0b3ae9bbabfbp1d9f31jsnbd26b30c0b49
